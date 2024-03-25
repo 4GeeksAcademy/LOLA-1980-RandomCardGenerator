@@ -13,17 +13,38 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div
+      id="card"
+      class="card container position-relative mt-5 round"
+      style="width: 20rem; height: 30rem;"
+    >
+      <span id="palo" class="palo"></span>
+      <span id="numero" class="numero"></span>
+      <span id="palo1" class="palo1 paloClass"></span>
     </div>
+
+    <div class="form-group mt-3">
+      <label for="widthInput">Width:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="widthInput"
+        placeholder="Enter width"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="heightInput">Height:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="heightInput"
+        placeholder="Enter height"
+      />
+    </div>
+
+    <button id="button" class="btn btn-warning mt-3">
+      Generate new card
+    </button>
   </body>
 </html>
